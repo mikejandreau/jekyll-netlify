@@ -1,0 +1,25 @@
+---
+layout: default
+title: Welcome
+---
+
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias ducimus magnam dolor illo repellendus molestiae laborum tempore fuga, dicta doloribus, adipisci vel, itaque quidem voluptate voluptas minus dolorum? Placeat, praesentium!</p>
+
+<div class="blog-posts row">
+  {% for post in site.posts limit:4 %}
+    <div class="six-sm four-md column">
+      <div class="blog-sample">
+        <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+        <p class="summary">
+          {{ post.category }}
+          <span class="date">
+            {{ post.date | date: '%B %d, %Y' }}
+          </span>
+        </p>
+        {{ post.excerpt }}
+      </div>
+    </div>
+  {% endfor %}
+</div>
+

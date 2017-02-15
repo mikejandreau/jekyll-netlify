@@ -1,0 +1,154 @@
+// // // Base files
+@import "base/normalize";
+@import "base/variables";
+@import "base/functions";
+@import "base/elements";
+@import "base/utils";
+@import "base/typography";
+
+// Components
+@import "components/grid";
+@import "components/hero";
+@import "components/navigation";
+@import "components/footer";
+@import "components/buttons";
+@import "components/forms";
+@import "components/lists";
+@import "components/tables";
+@import "components/spacing";
+@import "components/syntax";
+@import "components/media-queries";
+
+
+
+// // Our variables
+// $base-font-family: Helvetica, Arial, sans-serif;
+// $base-font-size:   16px;
+// $small-font-size:  $base-font-size * 0.875;
+// $base-line-height: 1.5;
+
+// $spacing-unit:     30px;
+
+// $text-color:       #111;
+// $background-color: #fdfdfd;
+// $brand-color:      #2a7ae2;
+
+// $grey-color:       #828282;
+// $grey-color-light: lighten($grey-color, 40%);
+// $grey-color-dark:  darken($grey-color, 25%);
+
+// // Width of the content area
+// $content-width:    800px;
+
+// $on-palm:          600px;
+// $on-laptop:        800px;
+
+// $transistion_duration: .3s;
+
+// $navbar-toggle-bar: .2rem;        // thickness of button bars
+// $navbar-toggle-bar_space: .5rem;     // spacing between button bars
+
+
+// // CSS footer fix
+// //––––––––––––––––––––––––––––––––––––––––––––––––––
+// html {
+//   height: 100%;
+// }
+
+// body {
+//   min-height: 100%;
+//   display: flex;
+//   flex-direction: column;
+// }
+
+// .page-content {
+//   flex: 1 0 auto;
+// }
+
+
+
+
+// // Post navigation
+// //––––––––––––––––––––––––––––––––––––––––––––––––––
+
+// .PageNavigation {
+//   font-size: 14px;
+//   display: block;
+//   width: auto;
+//   overflow: hidden;
+// }
+
+// .PageNavigation a {
+//   display: block;
+//   width: 50%;
+//   float: left;
+//   margin: 1em 0;
+// }
+
+// .PageNavigation .next {
+//   text-align: right;
+// }
+
+// @mixin media-query($device) {
+//     @media screen and (max-width: $device) {
+//         @content;
+//     }
+// }
+
+// // // Using media queries with like this:
+// // @include media-query($on-palm) {
+// //     .wrapper {
+// //         padding-right: $spacing-unit / 2;
+// //         padding-left: $spacing-unit / 2;
+// //     }
+// // }
+
+
+
+// // Import partials from `sass_dir` (defaults to `_sass`)
+// @import
+//         "base",
+//         "layout",
+//         "syntax-highlighting"
+// // ;
+
+
+// // Scrollup
+// //––––––––––––––––––––––––––––––––––––––––––––––––––
+// a.scrollup {
+//   display: none;
+//   position: fixed;
+//   bottom: 1em;
+//   right: 1em;
+//   background: $brand-color;
+//   border: 1px solid #fff;
+//   transition: background-color $transistion_duration;
+//   color: #fff;
+//   // padding: .4em .8em;
+//   text-align: center;
+//   border-radius: 100px;
+//   text-decoration: none;
+//   font-size: 1em;
+//   // line-height: 2em;
+
+//   &:hover,
+//   &:focus,
+//   &:active {
+//     color: #fff;
+//     background: darken($brand-color, 15%);
+//   }
+// }
+
+// .chevron::before {
+//   border-style: solid;
+//   content: '';
+//   display: block;
+//   position: relative;
+//   transform: rotate(-45deg);
+//   vertical-align: top;
+//   border-width: $navbar-toggle-bar $navbar-toggle-bar 0 0;
+//   top: $navbar-toggle-bar / 2;
+//   height: $navbar-toggle-bar_space * 1.2;
+//   width: $navbar-toggle-bar_space * 1.2;
+//   margin: $navbar-toggle-bar_space * 2;
+// }

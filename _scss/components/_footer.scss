@@ -1,0 +1,40 @@
+// Footer
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+.site-footer {
+    padding: ($navbar-height / 3) 0;
+    font-size: 80%;
+    color: $navbar-font-color;
+    background-color: $navbar-color;
+    border-top: 1px solid $navbar-border;
+
+    p {
+        margin: 0;
+    }
+
+    a {
+        color: $navbar-font-color; 
+        text-decoration: none;
+
+        &:hover,
+        &:focus,
+        &.active {
+            color: lighten($navbar-font-color, 15%); 
+        }
+    }
+}
+
+.copyright {
+    text-align: center;
+
+    @include phablet {
+        text-align: left;
+    }
+}
+
+.designer {
+    text-align: center;
+
+    @include phablet {
+        text-align: right;
+    }
+}

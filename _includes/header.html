@@ -1,0 +1,39 @@
+<header class="site-header">
+
+  <div class="container">
+  
+    <div class="navbar">
+      <div class="navbar-inner">
+        <span class="title"><a href="/">{{ site.title }}</a></span>
+        <button class="navbar-toggle">
+          <span>toggle menu</span>
+        </button>
+        <!-- <ul class="navbar-menu">
+          {% assign ordered-pages = site.pages | sort:"order" %}
+          {% for page in ordered-pages %}
+            {% unless page.exclude-from-nav %}
+              <li class="navbar-item"><a class="navbar-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+            {% endunless %}
+          {% endfor %}
+        </ul> -->
+
+        <ul class="navbar-menu">
+          <li class="navbar-item"><a class="navbar-link" href="/">Home</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="/about">About</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="/blog">Blog</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="/contact">Contact</a></li>
+        </ul>
+
+        <!-- <ul class="navbar-menu">
+          <li class="navbar-item"><a class="navbar-link social-link" href="https://www.facebook.com/michael.jandreau" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+          <li class="navbar-item"><a class="navbar-link social-link" href="https://twitter.com/losaidos" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
+          <li class="navbar-item"><a class="navbar-link social-link" href="http://wickedoffkiltah.deviantart.com/gallery/" target="_blank"><i class="fa fa-deviantart" aria-hidden="true"></i></a></li>
+          <li class="navbar-item"><a class="navbar-link social-link" href="https://soundcloud.com/mikejandreau" target="_blank"><i class="fa fa-soundcloud" aria-hidden="true"></i></a></li>
+        </ul> -->
+
+      </div>
+    </div>
+
+  </div>
+
+</header>

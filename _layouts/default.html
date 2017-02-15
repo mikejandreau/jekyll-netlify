@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body class="site" id="pageTop">
+
+    {% include header.html %}
+
+
+    {% if page.featured-image %}
+      <div class="hero hero-main" style="background-image: url({{ site.url }}/img/{{ page.featured-image }});">
+    {% else %}
+    <div class="hero hero-main">
+    {% endif %}
+      <div class="container">
+
+
+        <h2 class="primary-heading">{{ page.title }}</span></h2>
+        <p class="post-meta">
+
+
+        {{ page.date | date: "%b %-d, %Y" }}
+
+        {% if page.author %} • {{ page.author }}{% endif %}
+
+
+        {% if page.meta %} • {{ page.meta }}{% endif %}</p>
+
+
+      </div>
+    </div>
+
+
+
+    <div class="site-content">
+      <div class="container">
+        {{ content }}
+      </div>
+    </div>
+
+    {% include footer.html %}
+
+    <a class="scrollup" href="#pageTop"><span class="chevron"></span></a>
+
+  </body>
+
+</html>

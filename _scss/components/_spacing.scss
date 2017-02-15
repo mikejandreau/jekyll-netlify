@@ -1,0 +1,48 @@
+// Spacing
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+button,
+.button {
+  margin-bottom: 1rem;
+}
+
+input,
+textarea,
+select,
+fieldset {
+  margin-bottom: 1.5rem;
+}
+
+pre,
+blockquote,
+dl,
+figure,
+table,
+p,
+ul,
+ol,
+form {
+  margin-bottom: 2.5rem;
+}
+
+.site-content {
+  // padding-top: $navbar-height + ($navbar-height / 2); // adjustment for fixed header
+  padding-top: ($navbar-height / 2); // top padding with hero
+}
+
+
+// CSS footer fix
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.site-content {
+  flex: 1 0 auto;
+}
+// end footer fix

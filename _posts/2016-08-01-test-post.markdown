@@ -1,0 +1,97 @@
+---
+layout: post
+title:  "Test Post!"
+date:   2016-08-01 09:11:03
+author: Mike Jandreau
+categories: blog
+---
+
+You'll find this post in your `_posts` directory - edit this post and re-build (or run with the `-w` switch) to see your changes!
+To add new posts, simply add a file in the `_posts` directory that follows the convention: YYYY-MM-DD-name-of-post.ext.
+
+Jekyll also offers powerful support for code snippets:
+
+{% highlight js linenos %}
+
+// toggle the hamburger open and closed states
+var removeClass = true;
+
+$(".navbar-toggle").click(function () {
+  $(".navbar-toggle").toggleClass('is-active');
+  $(".navbar-menu").toggleClass('active-menu');
+  removeClass = false;
+});
+
+{% endhighlight %}
+
+Check out the [Jekyll docs][jekyll] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll's GitHub repo][jekyll-gh].
+
+
+
+{% highlight scss linenos %}
+
+// navbar
+.navbar,
+.navbar-spacer {  
+  box-sizing: border-box;
+  padding: 0;
+  display: block;
+  position: relative;
+  z-index: 100;
+  width: 100%;
+  height: $navbar-height;
+  background: $navbar-color;
+  z-index: 99;
+  border-top: 1px solid $navbar-border;
+
+  @include laptop {
+    border-bottom: 1px solid $navbar-border;
+  }
+}
+
+.highlight  { 
+  @extend %vertical-rhythm;
+  border-width: 1px;
+  border-style: solid;
+  padding: 0;
+  overflow-x: auto;
+
+  background: #2b303b; 
+  border-color: #1c1f26;
+
+  background-color: #002b36; 
+  color: #93a1a1;
+
+  table {
+      margin: 0;
+  }
+
+  td,
+  th {
+      border: none;
+  }
+
+  pre.lineno {
+      @include opacity(0.6);  
+      border: none;
+  }
+}
+
+// Colors
+.c   { color: #65737e } 
+.err { color: #c0c5ce } 
+.g   { color: #c0c5ce } 
+.k   { color: #b48ead } 
+{% endhighlight %}
+
+[jekyll-gh]: https://github.com/mojombo/jekyll
+[jekyll]:    http://jekyllrb.com
+
+
+{% highlight html linenos %}
+<header class="site-header">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="website.com/">BLoop</a>
+{% endhighlight %}

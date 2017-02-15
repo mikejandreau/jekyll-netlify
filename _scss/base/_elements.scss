@@ -1,0 +1,94 @@
+// Base Styles
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+// HTML is set to 62.5% so that all the REM measurements
+// are based on 10px sizing. Basically 1.5rem = 15px :)
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.5em; // currently ems cause chrome bug misinterpreting rems on body element
+  line-height: 1.6;
+  font-weight: 400;
+  font-family: $font-family;
+  color: $font-color;
+  background: #fff;
+}
+
+// Links
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+a {
+  color: $link-color;
+  &:hover {
+    color: darken($link-color, 5%);
+  }
+
+  &.contact-link {
+    text-decoration: none;
+    color: $font-color;
+
+    &:hover {
+      color: $dark-grey;
+    }
+  }
+
+  &.social-link {
+    // color: $font-color;
+    display: inline-block;
+    font-size: 2em;
+    text-decoration: none;
+
+    // &:hover {
+    //   color: $dark-grey;
+    // }
+  }
+}
+
+// Post navigation
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+.PageNavigation {
+  font-size: 14px;
+  display: block;
+  width: auto;
+  overflow: hidden;
+
+  a {
+    display: block;
+    width: 50%;
+    float: left;
+    margin: 1em 0;
+  }
+
+  .next {
+    text-align: right;
+    float: right;
+  }
+}
+
+
+// Misc
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+hr {
+  margin-top: 3rem;
+  margin-bottom: 3.5rem;
+  border-width: 0;
+  border-top: 1px solid $light-grey;
+}
+
+.meta {
+    color: #aaa;
+}
+
+img {
+  max-width: 100%;
+}
+
+
+
+
+
+
