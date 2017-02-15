@@ -29,14 +29,14 @@
 // For devices larger than 480px
 @include mobile {
   .container {
-    max-width: $container-width-mobile;
+    width: $container-width-mobile;
     // padding: 0;
   }
 }
 
 @include phablet {
   .container {
-    max-width: $container-width-phablet;
+    width: $container-width-phablet;
     // max-width: 600px;
   }
 
